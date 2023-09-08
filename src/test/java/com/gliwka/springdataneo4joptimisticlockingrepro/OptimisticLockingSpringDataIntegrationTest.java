@@ -1,15 +1,15 @@
 package com.gliwka.springdataneo4joptimisticlockingrepro;
 
-import com.gliwka.springdataneo4joptimisticlockingrepro.domain.Organization;
-import com.gliwka.springdataneo4joptimisticlockingrepro.domain.OrganizationRepository;
-import com.gliwka.springdataneo4joptimisticlockingrepro.domain.User;
-import com.gliwka.springdataneo4joptimisticlockingrepro.domain.UserRepository;
+import com.gliwka.springdataneo4joptimisticlockingrepro.sdn.domain.Organization;
+import com.gliwka.springdataneo4joptimisticlockingrepro.sdn.domain.OrganizationRepository;
+import com.gliwka.springdataneo4joptimisticlockingrepro.sdn.domain.User;
+import com.gliwka.springdataneo4joptimisticlockingrepro.sdn.domain.UserRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class OptimisticLockingIntegrationTest extends IntegrationTest {
+public class OptimisticLockingSpringDataIntegrationTest extends IntegrationTest {
 
     @Autowired
     private UserRepository userRepository;
