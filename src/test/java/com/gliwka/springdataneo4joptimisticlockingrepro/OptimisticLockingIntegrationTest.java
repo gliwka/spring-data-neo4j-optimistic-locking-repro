@@ -9,7 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class OptimisticLockingIntegrationTest extends IntegrationTest{
+public class OptimisticLockingIntegrationTest extends IntegrationTest {
 
     @Autowired
     private UserRepository userRepository;
